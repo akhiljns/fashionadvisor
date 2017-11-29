@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="/stylesheets/styles.event.css">
+    <title>Events</title>
+</head>
+<body>
+    <header>
+      <a href="#"><strong><center>Fashion Weeks</center></strong></a>
+    </header>
+    <div class = "table">
+      <center>
+        <table>
+          <tr>
+            <th>Event</th>
+            <th>Location</th>
+            <th>Date of Event</th>
+          </tr>
+          {{#each data}}
+            <tr>
+              <td>{{ename}}</td>
+              <td>{{city}}</td>
+              <td>{{date}}</td>
+            </tr>
+          {{/each}}
+        </table>
+      </center>
+    </div>
+</body>
+</html>
