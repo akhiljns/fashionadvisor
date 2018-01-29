@@ -3,7 +3,6 @@
 ### sara mysql ka saman yaha dalna hai
 
 ```mysql
-############STORED PROCEDURE###############
 delimiter //
 
 DROP IF PROCEDURE EXISTS applicableAge//
@@ -15,7 +14,6 @@ END//
 
 delimiter ;
 ```
-##############TRIGGER FOR AGE##################
 delimiter //
 
 CREATE TRIGGER applicableAge

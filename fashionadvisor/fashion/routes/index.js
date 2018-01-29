@@ -2,7 +2,7 @@ var express = require('express');
 var prompt = require('prompt');
 
 var router = express.Router();
-var mysql = require('mysql');
+var mysql      = require('mysql');
 
 var connection = mysql.createConnection({
   host     : 'localhost',
@@ -34,7 +34,7 @@ router.get('/contactus', function(req, res, next) {
 
 router.get('/judges', function(req, res, next) {
 
-  connection.query("SELECT jname,age FROM "+"judges"+" ;", function (error, results, fields) {
+  connection.query("SELECT jname,age FROM "+"judges"+";", function (error, results, fields) {
     if (error) throw error;
     console.log('The solution is: ', results);
     res.render('judges', { title: 'Judges', data : results });
